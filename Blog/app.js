@@ -6,6 +6,8 @@ var bodyParser = require('body-parser');
 var Cookies = require('cookies');
 var app = express();
 
+var User = require('./models/User');
+
 
 app.engine('html', swig.renderFile); //定义当前应用所使用的模板引擎
 app.set('views', './views');
